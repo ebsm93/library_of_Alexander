@@ -304,7 +304,7 @@ function displayListItems() {
 
 	favoriteReadsList.textContent = '';
 	favoriteReads.forEach(book => {
-	item = document.createElement('li');
+	item = document.createElement('button');
 	item.setAttribute('tabindex','0');
 	item.addEventListener('click', function () {displayBook(book)});
 	item.textContent = book.title;
@@ -313,7 +313,7 @@ function displayListItems() {
 
 	favoriteMoviesList.textContent = '';
 	favoriteMovies.forEach(movie => {
-	item = document.createElement('li');
+	item = document.createElement('button');
 	item.setAttribute('tabindex','0');
 	item.addEventListener('click', function () {displayMovie(movie)});
 	item.textContent = movie.title;
@@ -322,7 +322,7 @@ function displayListItems() {
 
 	toWatchList.textContent = '';
 	toWatch.forEach(movie => {
-	item = document.createElement('li');
+	item = document.createElement('button');
 	item.setAttribute('tabindex','0');
 	item.addEventListener('click', function () {displayMovie(movie)});
 	item.textContent = movie.title;
@@ -331,7 +331,7 @@ function displayListItems() {
 
 	toReadList.textContent = '';
 	toRead.forEach(book => {
-	item = document.createElement('li');
+	item = document.createElement('button');
 	item.setAttribute('tabindex','0');
 	item.addEventListener('click', function () {displayBook(book)});
 	item.textContent = book.title;
